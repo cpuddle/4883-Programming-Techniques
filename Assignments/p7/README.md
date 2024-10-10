@@ -1,23 +1,17 @@
-** Problem 7 LeetCode
+## Problem 7 - LeetCode
 
-***Method for Completing
+### Method for Completing
 
-Using a list/stack I know you are able to reverse a string or an integer due to it's 
-first in last out nature.
+Using a list/stack, we can reverse a string or an integer due to its first-in-last-out nature.
 
-First we need to check if x < 0 or not.
-    If so make negation = -1 so we can negate the result later.
-    Also we need to make x positive so we don't have to worry about
-    the negative value while manipulating the integer/string.
+1. First, we need to check if \( x < 0 \). If so, set `negation = -1` so we can negate the result later. We also need to make \( x \) positive to avoid worrying about the negative value while manipulating the integer/string.
 
-Now, we traverse the integer as a string and append each place value
-into the stack.
+2. Next, we traverse the integer as a string and append each place value into the stack.
 
-While s1 is true we pop all the values from the stack
-turning each string back to an integer.
+3. While the stack is not empty, we pop all the values from the stack, converting each string back to an integer.
 
-Now we do negation.
+4. Now, we apply the `negation` if necessary.
 
-Check for if the integer is within bounds for an 32-bit integer
+5. Check if the integer is within the bounds for a 32-bit integer.
 
-Return the result.
+6. Return the result.
