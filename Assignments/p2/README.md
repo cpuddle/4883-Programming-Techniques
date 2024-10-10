@@ -1,24 +1,25 @@
-** Problem 2 LeetCode
+## Problem 2 - LeetCode
 
-***Method for Completing
+### Method for Completing
 
-Create a temporary ListNode object and set that temporary ListNode equal to result. 
-As well as creating variables for carry and total.
+1. Create a temporary `ListNode` object and set it equal to `result`.
+2. Initialize variables for `carry` and `total`.
 
-While list one, list 2, or carry are true
-set total equal to carry
+3. While either `l1`, `l2`, or `carry` are true:
+   - Set `total` equal to `carry`.
+   - If `l1` is not null:
+     - Add `l1.val` to `total`.
+     - Move `l1` to `l1.next`.
+   - If `l2` is not null:
+     - Add `l2.val` to `total`.
+     - Move `l2` to `l2.next`.
 
-if l1 is true
-add l1.val to total
+4. Calculate the ones place:
+   - The value to be added to the list is `total % 10`.
+   - Update `carry` to `total // 10`.
 
-do the the same for l2
+5. Create a new `ListNode` with the calculated value and set it to the next of the temporary index.
 
-then, to get the ones place we do a modulus on total
-the number value that is returned to the list is equal to the total % 10
-now to get the tens place we do integer division to cut off the ones value and set that equal to carry
-carry = total // 10
+6. Move the temporary pointer to `temporary.next`.
 
-make ListNode(num) equal to the next temporary index
-then move temporary to temporary.next
-
-once the while loop is done, return the result
+7. Once the while loop is done, return `result`.
