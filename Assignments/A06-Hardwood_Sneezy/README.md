@@ -12,4 +12,3 @@ Return the answer sorted by the frequency from highest to lowest. Sort the words
 | :---: | -------------------------- | ---------------------------------------------------------- |
 |   1   | [main.py](./main.py)     | source file                                             |
 
-### Instructions

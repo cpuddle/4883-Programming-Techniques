@@ -2,5 +2,6 @@
 
 |  #  | Folder Link | Assignment Description |
 | :-: | ----------- | ---------------------- |
-|  1  | [p10055](https://github.com/cpuddle/4883-Programming-Techniques/tree/main/Assignments/p10055)| 10055 - Hashmat the Brave Warrior|
+|  1  | [A05 - Easy Breezy](./A05-Easy_Breezy)| 10 Easy Problems |
+|  2  | [A06 - Hardwood Sneezy](./A06-Hardwood_Sneezy)| Problems focusing on counting frequencies or selecting the top/bottom K elements, using heaps, priority queues, and sorting. |
 
